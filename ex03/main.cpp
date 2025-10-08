@@ -18,11 +18,11 @@
 
 int main(void)
 {
-	std::cout << "\033[33m=== Materia constructors ===v" << std::endl;
+	std::cout << "\033[33m=== Materia constructors ===\033[0m" << std::endl;
 	IMateriaSource* src = new MateriaSource();
 	std::cout << std::endl;
 	
-	std::cout << "=== Learn materias ===\033[0m" << std::endl;
+	std::cout << "\033[33m=== Learn materias ===\033[0m" << std::endl;
 	src->learnMateria(new Ice());
 	src->learnMateria(new Cure());
 	std::cout << std::endl;
